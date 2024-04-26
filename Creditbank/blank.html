@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!--Тип документа-->
+<html>
+    <head> 
+         <title>Кредитбанк</title>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="css/blank.css">
+    <body>
+        <div class="page">
+            <div class="wrapper" id="wrapper">
+                <header class="header">
+                    <h1 class="header__logo"><a href="index.html">КРЕДИТБАНК</a></h1>
+                    <span class="header__number">8 (800) 555-35-35</span>
+                </header>
+                <h1 class="form__title">Онлайн-заявка на кредит</h1>
+                <div class="form">
+                    <form action="#" id="form" class="form__body">
+                        <div class="form__top">
+                            <img src="img/shild.svg" alt=""/>
+                            <div class="form__shild">
+                                <p>Заполнение анкеты не обязывает вас брать кредит.</p>
+                                <p>Гарантируем: ваши данные останутся в безопасности.</p>
+                            </div>
+                        </div>
+                        <div class="form__main">
+                        <div class="form__item">
+                            <label for="formSurname" class="form__label">Фамилия*:</label>
+                            <input id="formSurname" type="text" name="surname" class="form__input _req _fio">
+                        </div>
+                        <div class="form__item">
+                            <label for="formName" class="form__label">Имя*:</label>
+                            <input id="formName" type="text" name="name" class="form__input _req _fio">
+                        </div>
+                        <div class="form__item">
+                            <label for="formMidname" class="form__label">Отчество*:</label>
+                            <input id="formMidname" type="text" name="midname" class="form__input _req _fio">
+                        </div>
+                        <div class="form__item">
+                            <label for="formPasport" class="form__label">Серия и номер паспорта*:</label>
+                            <input id="formPasport" type="text" name="pasport" class="form__input _req _pasport">
+                        </div>
+                        <div class="form__item">
+                            <div class="form__label">Тип кредита:</div>
+                            <select name="credit" class="select">
+                            </select>
+                        </div>
+                        <div class="form__item"> 
+                            <div class="form__composite">
+                                <div class="composite__item">
+                                    <label for="formSum" class="form__label">Сумма кредита*:</label>
+                                    <input id="formSum" type="number" value="50000" name="sum" class="form__input _req _sum">
+                                    <div class="slider s1">
+                                        <div class="progress p1"></div>
+                                    </div>
+                                    <div class="range-input rI1">
+                                        <input type="range" class="range" min="50000" max="5000000" value="50000" step="5000">
+                                    </div>
+                                    <p class="correction">Сумма кредита указывается в рублях (от 50 000 до 5 000 000)</p>
+                                </div>
+                                <div class="composite__item">
+                                    <label for="formDate" class="form__label">Срок кредита*:</label>
+                                    <input id="formDate" type="number" value="12" name="date" class="form__input _req _date">
+                                    <div class="slider s2">
+                                        <div class="progress p2"></div>
+                                    </div>
+                                    <div class="range-input rI2">
+                                        <input type="range" class="range" min="12" max="120" value="12" step="1">
+                                    </div>
+                                    <p class="correction">Срок кредита узывается в месяцах (от 12 до 120)</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="form__item">
+                            <label for="formMessage" class="form__label">Место работы и должность*:</label>
+                            <textarea name="message" id="formMessage" class="form__input _req"></textarea>
+                        </div> 
+                        <div class="form__item">
+                            <label for="formEmail" class="form__label">E-mail*:</label>
+                            <input id="formEmail" type="text" name="email" class="form__input _req _email">
+                            <p class="correction">На данный email будет направлена информация по заявке</p>
+                        </div>  
+                        <div class="form__item">
+                            <label for="formNumber" class="form__label">Номер телефона*:</label>
+                            <input id="formNumber" type="text" name="number" class="form__input _req _number">
+                            <p class="correction">В зависимости от типа кредита указанные сумма и срок кредита могут быть изменены, для уточнения этих параметров с вами свяжется наш оператор по указанному вами номеру телефона</p>
+                        </div>  
+                        <div class="form__item">
+                            <div class="form__label">Прикрепить фото паспорта:</div>
+                            <div class="file">
+                                <div class="file__item">
+                                    <input id="formImage" accept=".jpg, .png" type="file" name="image" class="file__input">
+                                    <div class="file__button">Выбрать</div>
+                                    <p class="correctionLast">Для ускорения проверки данных</p>
+                                </div>
+                                <div id="formPreview" class="file__preview"></div>
+                            </div>
+                        </div>  
+                        <div class="form__item">
+                            <div class="checkbox">
+                                <input type="checkbox" name="agreement" class="checkbox__input _req" id="formAgreement">
+                                <label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку персональных данных в соответствии с <a href="">Условиями*</a></span></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form__button">Отправить</button>
+                        </div>
+                    </form>
+                    <div class="detailed-inf" id="contentRightInner">
+                            <p class="detailed__title">Детальная информация:</p>
+                            <p class="highlighted">Сумма кредита</p>
+                            <div class="detailed__item">
+                                <p class="unpainted sum-inf">50000</p>
+                                <Span> ₽</Span>
+                            </div>
+                            <p class="highlighted">Срок кредита</p>
+                            <div  class="detailed__item">
+                                <p class="unpainted date-inf">12</p>
+                                <Span>Мес.</Span>
+                            </div>
+                            <p class="highlighted">Ставка</p>
+                            <div  class="detailed__item">
+                                <p class="unpainted">4</p>
+                                <span>%</span>
+                            </div>
+                            <p class="highlighted">Ежемесячный платёж:</p>
+                            <div  class="detailed__item">
+                                <p class="unpainted сalculation">4257.50</p>
+                                <Span>₽</Span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="footer__text">
+                        <div class="footer__location">
+                            <img src="img/white.svg" alt="">
+                            <span>Томск</span>
+                        </div>
+                        <span class="footer__number">8 (800) 555-35-35</span>
+                        <div class="footer__social">
+                            <a href="#"><img src="img/tele.svg" alt=""></a>
+                            <a href="#"><img src="img/tw.svg" alt=""></a>
+                            <a href="#"><img src="img/social-network-twitter_m 1.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="js/slider.js"></script>
+            <script src="js/script.js"></script>
+            <script src="js/scroll.js"></script>
+            <script src="js/select.js"></script>
+        </div>
+    </body>
+</html>

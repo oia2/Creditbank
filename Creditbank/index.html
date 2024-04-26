@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!--Тип документа-->
+<html>
+    <head> 
+         <title>Кредитбанк</title>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="css/index.css">
+    <body>
+        <div class="page">
+            <div class="wrapper">
+                <header class="header">
+                    <h1 class="header__logo"><a href="#">КРЕДИТБАНК</a></h1>
+                    <span class="header__number">8 (800) 555-35-35</span>
+                    <button type="button" id="button__top" class="header__button">
+                        Перейти к продуктам
+                    </button>
+                </header>
+                <div class="main">
+                    <div class="main__text">
+                        <h1>Кредиты на любые цели</h1>
+                        <p>Оформите кредит наличными или рефинансируйте кредит другого банка</p>
+                    </div>
+                    <img src="img/samolet.svg" alt="">
+                </div>
+                <div class="main-info">
+                    <div class="main-info__item">
+                        <p>до 10 лет</p>
+                        <span>Срок кредитования</span>
+                    </div>
+                    <div class="main-info__item">
+                        <p>от 4% </p>
+                        <span>Ставка на весь срок</span>
+                    </div>
+                    <div class="main-info__item">
+                        <p>5 млн ₽</p>
+                        <span>Максимальная сумма</span>
+                    </div>
+                    <div class="main-info__item">
+                        <p>от 2 минут</p>
+                        <span>Решение онлайн</span>
+                    </div>
+                </div>
+                <div class="catalog">
+                    <h2 id="products">Кредитные продукты</h2>
+                    <ul class="list">   
+                        <li class="list__item active" data-id="all">Все продукты</li>
+                        <li class="list__item" data-id="cash">Кредит налчиными</li>
+                        <li class="list__item" data-id="ref">Рефинансирование</li>
+                        <li class="list__item" data-id="another">Другие</li>
+                    </ul>
+                    <div class="blocks"></div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="footer__text">
+                        <div class="footer__location">
+                            <img src="img/white.svg" alt="">
+                            <span>Томск</span>
+                        </div>
+                        <span class="footer__number">8 (800) 555-35-35</span>
+                        <div class="footer__social">
+                            <a href="#"><img src="img/tele.svg" alt=""></a>
+                            <a href="#"><img src="img/tw.svg" alt=""></a>
+                            <a href="#"><img src="img/social-network-twitter_m 1.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/data.js"></script>
+        <script src="js/button.js"></script>
+        <script src="js/dynamic.js"></script>
+        <script src="js/filter.js"></script>
+    </body>
+</html>
